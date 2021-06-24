@@ -1,53 +1,25 @@
 <?php
+// Initialize the session
+session_start();
+
 // Include config file
 require_once "config.php";
  
 // Define variables and initialize with empty values
-$projectID = $projectDuration = $projectName = $owner = $financial = $mode = "";
-$projectID_err = $projectDuration_err = $projectName_err = $owner_err = $financial_err = $mode = "";
+$project_id = $projectName = $projectDuration = $owner = $financial = $mode = "";
+$project_id_err = $projectName_err = $projectDuration_err = $owner_err = $financial_err = $mode = "";
  
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
- 
-    // Validate projectID
-    if(empty(trim($_POST["projectID"]))){
-        $projectID_err = "Please enter project ID.";     
-    } elseif(!preg_match('/^[0-9]+$/', trim($_POST["projectID"]))){
-        $projectID_err = "Project ID can only contain numbers.";
-    } else{
-        $projectID= trim($_POST["projectID"]);
-    }
 
     // Validate projectName
+    $input_projectName = trim($_POST["projectName"]);
     if(empty(trim($_POST["projectName"]))){
-        $projectName_err = "Please enter a project name.";
+        $projectName_err = "Please enter your project name.";
     } elseif(!preg_match('/^[a-zA-Z_]+$/', trim($_POST["projectName"]))){
         $projectName_err = "Project name can only contain letters and underscores.";
     } else{
-        // Prepare a select statement
-        $sql = "SELECT id FROM users WHERE username = :username";
-        
-        if($stmt = $pdo->prepare($sql)){
-            // Bind variables to the prepared statement as parameters
-            $stmt->bindParam(":projectName", $param_projectName, PDO::PARAM_STR);
-            
-            // Set parameters
-            $param_projectName = trim($_POST["projectName"]);
-            
-            // Attempt to execute the prepared statement
-            if($stmt->execute()){
-                if($stmt->rowCount() == 1){
-                    $projectName_err = "This project name is already taken.";
-                } else{
-                    $projectName = trim($_POST["projectName"]);
-                }
-            } else{
-                echo "Oops! Something went wrong. Please try again later.";
-            }
-
-            // Close statement
-            unset($stmt);
-        }
+        $projectName = $input_projectName;
     }
     
     // Validate projectDuration
@@ -58,19 +30,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     
     // Validate owner
+    $input_owner = trim($_POST["owner"]);
     if(empty(trim($_POST["owner"]))){
-        $owner_err = "Please enter a owner name.";     
+        $owner_err = "Please enter your name.";     
     } else{
-        $owner = trim($_POST["owner"]);
+        $owner = $input_owner;
     }
 
     // Validate financial
+    $input_financial = trim($_POST["financial"]);
     if(empty(trim($_POST["financial"]))){
         $financial_err = "Please enter a financial.";     
     } elseif(!preg_match('/^[0-9]+$/', trim($_POST["financial"]))){
         $financial_err = "Financial can only contain numbers.";
     } else{
-        $financial= trim($_POST["financial"]);
+        $financial = $input_financial;
     }
 
     // Validate mode
@@ -81,27 +55,35 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     
     // Check input errors before inserting in database
-    if(empty($projectID_err) && empty($projectDuration_err) && empty($projectName_err) && empty($owner_err) && empty($financial_err) && empty($mode_err)){
-        
+    if(empty($projectDuration_err) && empty($projectName_err) && empty($owner_err) && empty($financial_err) && empty($mode_err)){
         // Prepare an insert statement
-        $sql = "INSERT INTO projectregistration (projectID, projectDuration, projectName, owner, financial, mode) VALUES (:projectID, :projectDuration, :projectName, :owner, :financial, :mode)";
+        $sql = "INSERT INTO projectregister (projectDuration, projectName, owner, financial, mode, id) VALUES (:projectDuration, :projectName, :owner, :financial, :mode, :id)";
          
         if($stmt = $pdo->prepare($sql)){
             // Bind variables to the prepared statement as parameters
-            $stmt->bindParam(":projectID", $param_projectID, PDO::PARAM_STR);
-            $stmt->bindParam(":projectDuration", $param_projectDuration, PDO::PARAM_STR);
-            $stmt->bindParam(":projectName", $param_projectName, PDO::PARAM_STR);
-            $stmt->bindParam(":owner", $param_owner, PDO::PARAM_STR);
-            $stmt->bindParam(":financial", $param_financial, PDO::PARAM_STR);
-            $stmt->bindParam(":mode", $param_mode, PDO::PARAM_STR);
+            $stmt->bindParam(":projectDuration", $param_projectDuration);
+            $stmt->bindParam(":projectName", $param_projectName);
+            $stmt->bindParam(":owner", $param_owner);
+            $stmt->bindParam(":financial", $param_financial);
+            $stmt->bindParam(":mode", $param_mode);
+            $stmt->bindParam(":id", $param_id);
             
             // Set parameters
-            $param_projectID = $projectID;
             $param_projectDuration = $projectDuration;
             $param_projectName = $projectName;
             $param_owner = $owner;
             $param_financial = $financial;
             $param_mode = $mode;
+            $param_id = $_SESSION["id"];
+
+            // Attempt to execute the prepared statement
+            if($stmt->execute()){
+                // Records created successfully. Redirect to landing page
+                header("location: home.php");
+                exit();
+            } else{
+                echo "Oops! Something went wrong. Please try again later.";
+            }
 
             // Close statement
             unset($stmt);
@@ -120,20 +102,24 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Project Registration</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 800px; padding: 20px; }
+        .wrapper{
+            width: 600px;
+            margin: 0 auto; }
     </style>
 </head>
 <body>
     <div class="wrapper">
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-md-12">
         <h2>Project Registration</h2>
         <p>Please fill this form to register project.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
-                <label>Project ID :</label>
-                <input type="text" name="projectID" class="form-control <?php echo (!empty($projectID_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $projectID; ?>">
-                <span class="invalid-feedback"><?php echo $projectID_err; ?></span>
-            </div>  
+                 <label>User Id</label>
+                 <input type="text" name="id" class="form-control" value="<?php echo htmlspecialchars($_SESSION["id"]); ?>" disabled>
+                 <span class="invalid-feedback"><?php echo $name_err;?></span>
+            </div>
             <div class="form-group">
                 <label>Project Name :</label>
                 <input type="text" name="projectName" class="form-control <?php echo (!empty($projectName_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $projectName; ?>">
@@ -156,9 +142,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <div class="form-group">
                 <label>Project Mode :</label>
-                <input type="text" name="mode" class="form-control <?php echo (!empty($mode_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $mode; ?>">
-                <span class="invalid-feedback"><?php echo $mode_err; ?></span>
-                <p>*(insource/ outsource/ co-source/ unspecified)*</p>
+                <select name="mode" class="form-control <?php echo (!empty($mode_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $mode; ?>">
+					<option disabled="" selected=""></option>
+					<option value="insource"> Insource</option>
+					<option value="outsource"> Outsource</option>
+					<option value="co-source"> Co-source</option>
+					<option value="unspecified"> Unspecified</option>
+				</select>
+				<span class="invalid-feedback"><?php echo $mode_err; ?></span>
             </div>
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Submit">
@@ -166,6 +157,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <p><a href="home.php" class="btn btn-danger ml-3">Back to Home Page</a></p>
         </form>
+    </div>
+    </div>
+    </div>
     </div>    
 </body>
 </html>
