@@ -27,13 +27,12 @@
                 <div class="col-md-12">
                     <div class="mt-5 mb-3 clearfix">
                         <h2 class="pull-left">Overall Result</h2>
-                        <a href="create.php" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New Item</a>
-                    </div>
+
                     <?php
                     require_once "config.php";
                     
                     $sql = "SELECT * FROM project_question";
-                    if($result = $pdo->query($sql)){
+                    if($result = $r = $r2 = $r3 = $r4 = $r5 = $r6 = $r7 = $pdo->query($sql)){
                         if($result->rowCount() > 0){
                             echo '<table class="table table-bordered table-striped">';
                                 echo "<thead>";
@@ -49,7 +48,9 @@
                                 echo "<tr>";
                                     echo "<td>1</td>";
                                     echo "<td>Project Characteristics</td>";
-                                    echo "<td>" $r1 "</td>";
+                                    echo "<td>";
+                                    echo $r1 ;
+                                    echo "</td>";
                                     echo "<td>";
                                     echo "</td>";
                                 echo "</tr>";
@@ -58,7 +59,9 @@
                                 echo "<tr>";
                                     echo "<td>2</td>";
                                     echo "<td>Strategic Management Risks</td>";
-                                    echo "<td>" $r2 "</td>";
+                                    echo "<td>";
+                                    echo $r2 ; 
+                                    echo "</td>";
                                     echo "<td>";
                                     echo "</td>";
                                 echo "</tr>";
@@ -67,7 +70,9 @@
                                 echo "<tr>";
                                     echo "<td>3</td>";
                                     echo "<td>Procurement Risks</td>";
-                                    echo "<td>" $r3 "</td>";
+                                    echo "<td>" ;
+                                    echo $r3 ; 
+                                    echo "</td>";
                                     echo "<td>";
                                     echo "</td>";
                                 echo "</tr>";
@@ -76,7 +81,9 @@
                                 echo "<tr>";
                                     echo "<td>4</td>";
                                     echo "<td>Human Resource Risks</td>";
-                                    echo "<td>" $r4 "</td>";
+                                    echo "<td>" ;
+                                    echo $r4 ; 
+                                    echo "</td>";
                                     echo "<td>";
                                     echo "</td>";
                                 echo "</tr>";
@@ -85,7 +92,9 @@
                                 echo "<tr>";
                                     echo "<td>5</td>";
                                     echo "<td>Business Risks</td>";
-                                    echo "<td>" $r5 "</td>";
+                                    echo "<td>" ;
+                                    echo $r5 ;
+                                    echo "</td>";
                                     echo "<td>";
                                     echo "</td>";
                                 echo "</tr>";
@@ -94,7 +103,9 @@
                                 echo "<tr>";
                                     echo "<td>6</td>";
                                     echo "<td>Project Management Integration Risks</td>";
-                                    echo "<td>" $r6 "</td>";
+                                    echo "<td>" ;
+                                    echo $r6 ;
+                                    echo "</td>";
                                     echo "<td>";
                                     echo "</td>";
                                 echo "</tr>";
@@ -103,7 +114,9 @@
                                 echo "<tr>";
                                     echo "<td>7</td>";
                                     echo "<td>Project Requirements Risks</td>";
-                                    echo "<td>" $r7 "</td>";
+                                    echo "<td>"; 
+                                    echo $r7 ;
+                                    echo "</td>";
                                     echo "<td>";
                                     echo "</td>";
                                 echo "</tr>";
@@ -111,7 +124,9 @@
                                 echo "<tr>";
                                     echo "<td></td>";
                                     echo "<td>Total</td>";
-                                    echo "<td>" $r1 + $r2 + $r3 + $r4 + $r5 + $r6 + $r7 "</td>";
+                                    echo "<td>"; 
+                                    echo ($r1 + $r2 + $r3 + $r4 + $r5 + $r6 + $r7) ;
+                                    echo "</td>";
                                     echo "<td>";
                                     echo "</td>";
                                 echo "</tr>";
