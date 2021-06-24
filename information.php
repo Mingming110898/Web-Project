@@ -38,15 +38,6 @@ The possibility of suffering loss. - <em> Source: Webster's </em> </p>
     <li> (Inherent) the degree of complication of a system or system component, determined by such factors as the number and intricacy of interfaces, the number and intricacy of conditional branches, the degree of nesting, and the types of data structures. </li>
     <p> </p>
 
-    <h5><strong> Instruction: </strong></h5> 
-    <p> The PCRA contains 64 questions. The questions are all given an equal percentage in the overall score. This tool is accompanied by the PCRA User Guide and an Excel spreadsheet that will tabulate the final score and rating automatically. </p>
-    <p> There are a few rules for completing the PCRA: </p>
-    <li>Every question must be answered. If you are sure a question does not apply to your project, answer with the lowest score ("1") for that question; </li>
-    <li>If the answer to a question is unknown, answer with the highest score ("5") for that question; and </li>
-    <li>If you answer "1" to Question 2 in the "Project characteristics" section (3.1), questions in the "Procurement risks" section (3.3) should be answered with a "1" only. </li>
-    <p> </p>
-    <p> The tool is also available on-line. For further information on how to setup a user account and complete the assessment online, please contact your departmental coordinator or agency lead. </p>
-
     <h5><strong> Description of the sections </strong></h5> 
     <p>The assessment is divided into seven sections or categories of questions. They are described in table below. </h4>
    
@@ -188,5 +179,17 @@ The possibility of suffering loss. - <em> Source: Webster's </em> </p>
     <td>83 and over</td>
     </tr>
 </table>
+<p> </p>
+<h5><strong> Instruction: </strong></h5> 
+    <p> The PCRA contains 64 questions. The questions are all given an equal percentage in the overall score. This tool is accompanied by the PCRA User Guide and an Excel spreadsheet that will tabulate the final score and rating automatically. </p>
+    <p> There are a few rules for completing the PCRA: </p>
+    <li>Every question must be answered. If you are sure a question does not apply to your project, answer with the lowest score ("1") for that question; </li>
+    <li>If the answer to a question is unknown, answer with the highest score ("5") for that question; and </li>
+    <li>If you answer "1" to Question 2 in the "Project characteristics" section (3.1), questions in the "Procurement risks" section (3.3) should be answered with a "1" only. </li>
+    <p> </p>
+    <p> The tool is also available on-line. For further information on how to setup a user account and complete the assessment online, please contact your departmental coordinator or agency lead. </p>
+
+<p><a href="home.php" class="btn btn-danger ml-3">Back to Home Page</a>
+<a href="question.php" class="btn btn-danger ml-3">Next</a></p>
 </body>
 </html>
