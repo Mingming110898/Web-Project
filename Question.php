@@ -260,6 +260,7 @@ th, td {
 
 <h1>Project Complexity and Risk Assessment Question</h1>
 <br>
+
 <h2>3.1 Project Characteristics (18 Questions) </h2>
 
 <table style="width:100%">
@@ -314,9 +315,7 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q3" value="1" >1 = Small</li>
-        <li><input type="radio" name = "q3" value="2" ></li>
         <li><input type="radio" name = "q3" value="3" >3 = Medium</li>
-        <li><input type="radio" name = "q3" value="4" ></li>
         <li><input type="radio" name = "q3" value="5" >5 = Large</li>
         </ul>
     </td>
@@ -428,9 +427,7 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q9" value="1" >1 = Both criteria are met.</li>
-        <li><input type="radio" name = "q9" value="2" ></li>
         <li><input type="radio" name = "q9" value="3" >3 = One of the two criteria is met.</li>
-        <li><input type="radio" name = "q9" value="4" ></li>
         <li><input type="radio" name = "q9" value="5" >5 = None of the criteria are met.</li>
         </ul>
     </td>
@@ -449,9 +446,7 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q10" value="1" >1 = Both criteria are met.</li>
-        <li><input type="radio" name = "q10" value="2" ></li>
         <li><input type="radio" name = "q10" value="3" >3 = One of the two criteria is met.</li>
-        <li><input type="radio" name = "q10" value="4" ></li>
         <li><input type="radio" name = "q10" value="5" >5 = None of the criteria are met.</li>
         </ul>
     </td>  
@@ -473,9 +468,7 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q11" value="1" >1 = No, the project is not susceptible.</li>
-        <li><input type="radio" name = "q11" value="2" ></li>
         <li><input type="radio" name = "q11" value="3" >3 = Yes, the project is moderately susceptible; time delays will have minor effects on the schedule.</li>
-        <li><input type="radio" name = "q11" value="4" ></li>
         <li><input type="radio" name = "q11" value="5" >5 = Yes, the project is highly susceptible; time delays will have major effects on the schedule.</li>
         </ul>
     </td>
@@ -495,9 +488,7 @@ th, td {
   </td>
   <td><ul class ="likert">
       <li><input type="radio" name = "q12" value="1" >1 = Neither statement applies.</li>
-      <li><input type="radio" name = "q12" value="2" ></li>
       <li><input type="radio" name = "q12" value="3" >3 = One statement is true.</li>
-      <li><input type="radio" name = "q12" value="4" ></li>
       <li><input type="radio" name = "q12" value="5" >5 = Both statements are true.</li>
       </ul>
   </td>  
@@ -512,9 +503,6 @@ th, td {
   </td>
   <td><ul class ="likert">
       <li><input type="radio" name = "q13" value="1" >1 = No</li>
-      <li><input type="radio" name = "q13" value="2" ></li>
-      <li><input type="radio" name = "q13" value="3" ></li>
-      <li><input type="radio" name = "q13" value="4" ></li>
       <li><input type="radio" name = "q13" value="5" >5 = Yes</li>
       </ul>
   </td>  
@@ -529,9 +517,6 @@ th, td {
   </td>
   <td><ul class ="likert">
       <li><input type="radio" name = "q14" value="1" >1 = No</li>
-      <li><input type="radio" name = "q14" value="2" ></li>
-      <li><input type="radio" name = "q14" value="3" ></li>
-      <li><input type="radio" name = "q14" value="4" ></li>
       <li><input type="radio" name = "q14" value="5" >5 = Yes</li>
       </ul>
   </td>  
@@ -546,9 +531,7 @@ th, td {
   </td>
   <td><ul class ="likert">
       <li><input type="radio" name = "q15" value="1" >1 = Appropriate facilities are available to conduct the project.</li>
-      <li><input type="radio" name = "q15" value="2" ></li>
       <li><input type="radio" name = "q15" value="3" >3 = Facilities available to the project are inadequate.</li>
-      <li><input type="radio" name = "q15" value="4" ></li>
       <li><input type="radio" name = "q15" value="5" >5 = Facilities are unavailable for the project.</li>
       </ul>
   </td>  
@@ -562,9 +545,6 @@ th, td {
   </td>
   <td><ul class ="likert">
       <li><input type="radio" name = "q16" value="1" >1 = No</li>
-      <li><input type="radio" name = "q16" value="2" ></li>
-      <li><input type="radio" name = "q16" value="3" ></li>
-      <li><input type="radio" name = "q16" value="4" ></li>
       <li><input type="radio" name = "q16" value="5" >5 = Yes</li>
       </ul>
   </td>  
@@ -578,9 +558,6 @@ th, td {
   </td>
   <td><ul class ="likert">
       <li><input type="radio" name = "q17" value="1" >1 = No</li>
-      <li><input type="radio" name = "q17" value="2" ></li>
-      <li><input type="radio" name = "q17" value="3" ></li>
-      <li><input type="radio" name = "q17" value="4" ></li>
       <li><input type="radio" name = "q17" value="5" >5 = Yes</li>
       </ul>
   </td>  
@@ -594,9 +571,6 @@ th, td {
   </td>
   <td><ul class ="likert">
       <li><input type="radio" name = "q18" value="1" >1 = No</li>
-      <li><input type="radio" name = "q18" value="2" ></li>
-      <li><input type="radio" name = "q18" value="3" ></li>
-      <li><input type="radio" name = "q18" value="4" ></li>
       <li><input type="radio" name = "q18" value="5" >5 = Yes</li>
       </ul>
   </td>  
@@ -621,9 +595,7 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q19" value="1" >1 = The project is directly aligned and it explicity contributes to the strategic outcomes of the organization or program.</li>
-        <li><input type="radio" name = "q19" value="2" ></li>
         <li><input type="radio" name = "q19" value="3" >3 = There is good alignment with the strategic outcome and there is an indirect contribution to the strategic outcomes of the organization or program.</li>
-        <li><input type="radio" name = "q19" value="4" ></li>
         <li><input type="radio" name = "q19" value="5" >5 = There is a weak alignment with the strategic outcomes, or the strategic outcomes have not been established.</li>
         </ul>
     </td>    
@@ -638,9 +610,6 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q20" value="1" >1 = The project is a critical priority: all resources necessary will be allocated to it.</li>
-        <li><input type="radio" name = "q20" value="2" ></li>
-        <li><input type="radio" name = "q20" value="3" ></li>
-        <li><input type="radio" name = "q20" value="4" ></li>
         <li><input type="radio" name = "q20" value="5" >5 = The project is a normal priority: resources may be shared with a project of equal or higher priority.</li>
         </ul>
     </td>    
@@ -656,9 +625,7 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q21" value="1" >1 = The business case is compelling, and value is extensively documented, OR a business case is not required.</li>
-        <li><input type="radio" name = "q21" value="2" ></li>
         <li><input type="radio" name = "q21" value="3" >3 = The business case provides a good demonstration of value; some details require further clarification.</li>
-        <li><input type="radio" name = "q21" value="4" ></li>
         <li><input type="radio" name = "q21" value="5" >5 = The business case does not demonstrate value or is not complete.</li>
         </ul>
     </td>    
@@ -672,9 +639,7 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q22" value="1" >1 = There is consistent, clear, and comprehensive understanding of the project at all relevant levels.</li>
-        <li><input type="radio" name = "q22" value="2" ></li>
         <li><input type="radio" name = "q22" value="3" >3 = There is good general awareness of the project, its implications, and its budget.</li>
-        <li><input type="radio" name = "q22" value="4" ></li>
         <li><input type="radio" name = "q22" value="5" >5 = There is minimal awareness of the project in relevant levels of the organization.</li>
         </ul>
     </td>    
@@ -690,9 +655,7 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q23" value="1" >1 = Yes, there is a project communications plan..</li>
-        <li><input type="radio" name = "q23" value="2" ></li>
         <li><input type="radio" name = "q23" value="3" >3 = The project communications plan has not yet been completed.</li>
-        <li><input type="radio" name = "q23" value="4" ></li>
         <li><input type="radio" name = "q23" value="5" >5 = No, a project communications plan does not exist.</li>
         </ul>
     </td>  
@@ -741,9 +704,7 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q25" value="1" >1 = addresses all project requirements.</li>
-        <li><input type="radio" name = "q25" value="2" ></li>
         <li><input type="radio" name = "q25" value="3" >3 = is high-level and adequately describes required procurement activities.</li>
-        <li><input type="radio" name = "q25" value="4" ></li>
         <li><input type="radio" name = "q25" value="5" >5 = is incomplete or inappropriate for the project.</li>
         </ul>
     </td>    
@@ -757,9 +718,7 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q26" value="1" >1 = There are qualified suppliers in the market willing to work with the Government of Canada.</li>
-        <li><input type="radio" name = "q26" value="2" ></li>
         <li><input type="radio" name = "q26" value="3" >3 = There is a limited number of qualified suppliers in the market or some suppliers are reluctant to work with the Government of Canada.</li>
-        <li><input type="radio" name = "q26" value="4" ></li>
         <li><input type="radio" name = "q26" value="5" >5 = There is only one supplier or there are no qualified suppliers that can meet the requirements.</li>
         </ul>
     </td>    
@@ -775,9 +734,7 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q27" value="1" >1 = There is no potential for products, goods, or services not being readily supplied.</li>
-        <li><input type="radio" name = "q27" value="2" ></li>
         <li><input type="radio" name = "q27" value="3" >3 = There is a slight potential for slippage of project schedule due to procurement complexity or vendor challenges.</li>
-        <li><input type="radio" name = "q27" value="4" ></li>
         <li><input type="radio" name = "q27" value="5" >5 = There is a potential that the project deliverables, schedule, or budget may be seriously affected by limited qualified bidders, significant request-for-proposal process delays, or extended challenges.</li>
         </ul>
     </td>    
@@ -799,7 +756,6 @@ th, td {
     <td><ul class ="likert">
         <li><input type="radio" name = "q28" value="1" >1 = All statements are true.</li>
         <li><input type="radio" name = "q28" value="2" >2 = Two statements are true.</li>
-        <li><input type="radio" name = "q28" value="3" ></li>
         <li><input type="radio" name = "q28" value="4" >4 = One statement is true.</li>
         <li><input type="radio" name = "q28" value="5" >5 = None of the statements are true.</li>
         </ul>
@@ -838,7 +794,6 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q30" value="1" >1 = None of the statements are true.</li>
-        <li><input type="radio" name = "q30" value="2" ></li>
         <li><input type="radio" name = "q30" value="3" >3 = One statement is true.</li>
         <li><input type="radio" name = "q30" value="4" >4 = Two statements are true.</li>
         <li><input type="radio" name = "q30" value="5" >5 = All of the statements are true.</li>
@@ -857,7 +812,6 @@ th, td {
     <td><ul class ="likert">
         <li><input type="radio" name = "q31" value="1" >1 = directed (sole-source, Advance Contract Award Notice - ACAN).</li>
         <li><input type="radio" name = "q31" value="2" >2 = a standing offer call-up.</li>
-        <li><input type="radio" name = "q31" value="3" ></li>
         <li><input type="radio" name = "q31" value="4" >4 = a supply arrangement procurement.</li>
         <li><input type="radio" name = "q31" value="5" >5 = a public tender (request for quotation, invitation to tender, request for proposal).</li>
         </ul>
@@ -896,9 +850,7 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q33" value="1" >1 = Yes, or not required.</li>
-        <li><input type="radio" name = "q33" value="2" ></li>
         <li><input type="radio" name = "q33" value="3" >3 = This is planned but not yet in place.</li>
-        <li><input type="radio" name = "q33" value="4" ></li>
         <li><input type="radio" name = "q33" value="5" >5 = No.</li>
         </ul>
     </td>    
@@ -924,9 +876,6 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q34" value="1" >1 = No</li>
-        <li><input type="radio" name = "q34" value="2" ></li>
-        <li><input type="radio" name = "q34" value="3" ></li>
-        <li><input type="radio" name = "q34" value="4" ></li>
         <li><input type="radio" name = "q34" value="5" >5 = Yes</li>
         </ul>
     </td>    
@@ -948,7 +897,6 @@ th, td {
     <td><ul class ="likert">
         <li><input type="radio" name = "q35" value="1" >1 = All three criteria are met.</li>
         <li><input type="radio" name = "q35" value="2" >2 = Two of the three criteria are met.</li>
-        <li><input type="radio" name = "q35" value="3" ></li>
         <li><input type="radio" name = "q35" value="4" >4 = One of the three criteria is met.</li>
         <li><input type="radio" name = "q35" value="5" >5 = None of the three criteria are met.</li>
         </ul>
@@ -988,7 +936,6 @@ th, td {
     <td><ul class ="likert">
         <li><input type="radio" name = "q37" value="1" >1 = All three criteria are met.</li>
         <li><input type="radio" name = "q37" value="2" >2 = Two of the three criteria are met.</li>
-        <li><input type="radio" name = "q37" value="3" ></li>
         <li><input type="radio" name = "q37" value="4" >4 = One of the three criteria is met.</li>
         <li><input type="radio" name = "q37" value="5" >5 = None of the three criteria are met.</li>
         </ul>
@@ -1003,9 +950,6 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q38" value="1" >1 = Yes</li>
-        <li><input type="radio" name = "q38" value="2" ></li>
-        <li><input type="radio" name = "q38" value="3" ></li>
-        <li><input type="radio" name = "q38" value="4" ></li>
         <li><input type="radio" name = "q38" value="5" >5 = No</li>
         </ul>
     </td>    
@@ -1030,9 +974,7 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q39" value="1" >1 = Project will fit with the organization's current processes, use existing workforce and skills, and not require substantial changes to technology and other infrastructure.</li>
-        <li><input type="radio" name = "q39" value="2" ></li>
         <li><input type="radio" name = "q39" value="3" >3 = Some changes to processes, staffing models, or technology will be required.</li>
-        <li><input type="radio" name = "q39" value="4" ></li>
         <li><input type="radio" name = "q39" value="5" >5 = Significant restructuring of business processes, staffing requirements, partner relationships, and infrastructure will be required.</li>
         </ul>
     </td>    
@@ -1048,9 +990,7 @@ th, td {
   </td>
   <td><ul class ="likert">
       <li><input type="radio" name = "q40" value="1" >1 = Change management will be required and a change management plan has been prepared. Alternatively, there are no significant change management requirements.</li>
-      <li><input type="radio" name = "q40" value="2" ></li>
       <li><input type="radio" name = "q40" value="3" >3 = Change management will be required and preparation of a change management plan is incorporated or included in the project management plan.</li>
-      <li><input type="radio" name = "q40" value="4" ></li>
       <li><input type="radio" name = "q40" value="5" >5 = Change management will be required but there are no plans to establish a change management plan.</li>
       </ul>
   </td>    
@@ -1066,7 +1006,6 @@ th, td {
   <td><ul class ="likert">
       <li><input type="radio" name = "q41" value="1" >1 = No public participation is required for project success.</li>
       <li><input type="radio" name = "q41" value="2" >2 = Limited public participation is required for project success.</li>
-      <li><input type="radio" name = "q41" value="3" ></li>
       <li><input type="radio" name = "q41" value="4" >4 = Moderate public participation is required for project success.</li>
       <li><input type="radio" name = "q41" value="5" >5 = Extensive public participation is required for project success.</li>
       </ul>
@@ -1099,9 +1038,7 @@ th, td {
   </td>
   <td><ul class ="likert">
       <li><input type="radio" name = "q43" value="1" >1 = The project fully complies with all applicable policies. Alternatively, the project is not subject to any of these policies.</li>
-      <li><input type="radio" name = "q43" value="2" ></li>
       <li><input type="radio" name = "q43" value="3" >3 = There are some challenges associated with policy requirements, but the project team is adequately equipped to address these.</li>
-      <li><input type="radio" name = "q43" value="4" ></li>
       <li><input type="radio" name = "q43" value="5" >5 = There are some challenges associated with policy requirements and there is a lack of confidence that policy requirements can be met on schedule and within the budget.</li>
       </ul>
   </td>    
@@ -1160,7 +1097,6 @@ th, td {
     <td><ul class ="likert">
         <li><input type="radio" name = "q45" value="1" >1 = All three criteria are met.</li>
         <li><input type="radio" name = "q45" value="2" >2 = Two of the three criteria are met.</li>
-        <li><input type="radio" name = "q45" value="3" ></li>
         <li><input type="radio" name = "q45" value="4" >4 = One of the three criteria is met.</li>
         <li><input type="radio" name = "q45" value="5" >5 = None of the three criteria are met.</li>
         </ul>
@@ -1175,9 +1111,7 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q46" value="1" >1 = Yes</li>
-        <li><input type="radio" name = "q46" value="2" ></li>
         <li><input type="radio" name = "q46" value="3" >3 = The development of a project reporting and control process is a planned activity, but not yet completed.</li>
-        <li><input type="radio" name = "q46" value="4" ></li>
         <li><input type="radio" name = "q46" value="5" >5 = No</li>
         </ul>
     </td>    
@@ -1223,7 +1157,6 @@ th, td {
     <td><ul class ="likert">
         <li><input type="radio" name = "q48" value="1" >1 = All three criteria are met, OR a risk management plan is not required.</li>
         <li><input type="radio" name = "q48" value="2" >2 = Two of the three criteria are met.</li>
-        <li><input type="radio" name = "q48" value="3" ></li>
         <li><input type="radio" name = "q48" value="4" >4 = One of the three criteria is met.</li>
         <li><input type="radio" name = "q48" value="5" >5 = None of the three criteria are met.</li>
         </ul>
@@ -1238,9 +1171,7 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q49" value="1" >1 = Comprehensive information management practices are in place or planned to support the project throughout its life cycle.</li>
-        <li><input type="radio" name = "q49" value="2" ></li>
         <li><input type="radio" name = "q49" value="3" >3 = Standard IM practices are planned or in place and resourced.</li>
-        <li><input type="radio" name = "q49" value="4" ></li>
         <li><input type="radio" name = "q49" value="5" >5 = Minimal IM practices are in place or planned within the project.</li>
         </ul>
     </td>    
@@ -1335,9 +1266,7 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q53" value="1" >1 = Yes</li>
-        <li><input type="radio" name = "q53" value="2" ></li>
         <li><input type="radio" name = "q53" value="3" >3 = Validation is a planned activity but has not yet been completed.</li>
-        <li><input type="radio" name = "q53" value="4" ></li>
         <li><input type="radio" name = "q53" value="5" >5 = No</li>
         </ul>
     </td>    
@@ -1353,7 +1282,6 @@ th, td {
     <td><ul class ="likert">
         <li><input type="radio" name = "q54" value="1" >1 = Feasibility studies are <b>not</b> required, because none of the requirements are technically difficult to implement.</li>
         <li><input type="radio" name = "q54" value="2" >2 = Feasibility studies were conducted and there is confidence in the assumptions made.</li>
-        <li><input type="radio" name = "q54" value="3" ></li>
         <li><input type="radio" name = "q54" value="4" >4 = Feasibility studies were conducted, but there is not complete confidence in the assumptions made.</li>
         <li><input type="radio" name = "q54" value="5" >5 = Feasibility studies were necessary but not conducted.</li>
         </ul>
@@ -1385,9 +1313,7 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q56" value="1" >1 = All requirements are clear, complete, and communicated.</li>
-        <li><input type="radio" name = "q56" value="2" ></li>
         <li><input type="radio" name = "q56" value="3" >3 = Up to 10 per cent of total requirements are not complete or are undocumented.</li>
-        <li><input type="radio" name = "q56" value="4" ></li>
         <li><input type="radio" name = "q56" value="5" >5 = More than 10 per cent of total requirements are not complete or are unclear.</li>
         </ul>
     </td>    
@@ -1427,9 +1353,6 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q58" value="1" >1 = No</li>
-        <li><input type="radio" name = "q58" value="2" ></li>
-        <li><input type="radio" name = "q58" value="3" ></li>
-        <li><input type="radio" name = "q58" value="4" ></li>
         <li><input type="radio" name = "q58" value="5" >5 = Yes</li>
         </ul>
     </td>    
@@ -1443,9 +1366,6 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q59" value="1" >1 = No</li>
-        <li><input type="radio" name = "q59" value="2" ></li>
-        <li><input type="radio" name = "q59" value="3" ></li>
-        <li><input type="radio" name = "q59" value="4" ></li>
         <li><input type="radio" name = "q59" value="5" >5 = Yes</li>
         </ul>
     </td>    
@@ -1460,9 +1380,7 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q60" value="1" >1 = There are few complex integration requirements; activities to specify integration are included in the project management plan.</li>
-        <li><input type="radio" name = "q60" value="2" ></li>
         <li><input type="radio" name = "q60" value="3" >3 = There is adequate understanding and planning for integration.</li>
-        <li><input type="radio" name = "q60" value="4" ></li>
         <li><input type="radio" name = "q60" value="5" >5 = There are highly complex or numerous integration requirements and insufficient planning of required activities.</li>
         </ul>
     </td>    
@@ -1476,9 +1394,7 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q61" value="1" >1 = There are few complex integration requirements; activities to specify integration are included in the project management plan.</li>
-        <li><input type="radio" name = "q61" value="2" ></li>
         <li><input type="radio" name = "q61" value="3" >3 = There is adequate understanding and planning for integration.</li>
-        <li><input type="radio" name = "q61" value="4" ></li>
         <li><input type="radio" name = "q61" value="5" >5 = There are highly complex or numerous integration requirements and insufficient planning of required activities.</li>
         </ul>
     </td>    
@@ -1494,9 +1410,7 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q62" value="1" >1 = Small</li>
-        <li><input type="radio" name = "q62" value="2" ></li>
         <li><input type="radio" name = "q62" value="3" >3 = Medium</li>
-        <li><input type="radio" name = "q62" value="4" ></li>
         <li><input type="radio" name = "q62" value="5" >5 = Large</li>
         </ul>
     </td>    
@@ -1510,9 +1424,6 @@ th, td {
     </td>
     <td><ul class ="likert">
         <li><input type="radio" name = "q63" value="1" >1 = Yes</li>
-        <li><input type="radio" name = "q63" value="2" ></li>
-        <li><input type="radio" name = "q63" value="3" ></li>
-        <li><input type="radio" name = "q63" value="4" ></li>
         <li><input type="radio" name = "q63" value="5" >5 = No, OR no critical path analysis has been performed.</li>
         </ul>
     </td>    
